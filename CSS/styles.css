@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    /*Inicio Style Body*/
+
+body {
+    background-image: url(../Componentes/imagens/backgroundedit.png);
+    background-attachment: scroll;
+    background-size: cover;
+    font-size: 18px;
+}
+
+.container-select {
+    color: rgb(255, 255, 255);
+}
+
+.imagem-container1 {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: -150px;
+    left: 650px;
+    border: 3px #000000 solid;
+}
+
+.itens-container1 {
+    justify-content: space-around;
+}
+
+.titulo1 {
+    text-align: center;    
+    padding: 25px;
+}
+
+.container1 {
+    margin: 10px 50px; 
+    width: 500px;   
+}
+
+.p-container1 {
+    line-height: 25px;
+}
+
+.container-select h1 {
+    height: 50px;
+}
+
+.btnme-add {
+    text-decoration: none;
+    color: red;
+    background-color: #555;
+    padding: 10px;
+    border: 2px black solid;
+    border-radius: 10px;
+    position: relative;
+    top: -100px;
+    left: 210px;
+    transition: 500ms;
+}
+
+.btnme-add:hover {
+    background-color: rgb(100, 100, 100);
+    padding: 12px;
+    transition: 500ms;
+}
+    /*Fim Style Body*/
+
+    /*Inicio Style Header*/
+
+header {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2px 0;
+    font-size: 16px;
+}
+
+div h1 a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+}
+
+.logo-imagem {
+    height: 75px;
+    width: 75px;
+    position: relative;
+    top: 63px;
+    right: 70px;
+    border-radius: 50px;
+}
+
+.container-logo {
+    display: flex;
+    align-items: center;    
+    position: relative;
+    top: -45px;
+    right: 0px;
+}
+
+.header2 {
+    margin-left: 5px;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.menu li a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition: 500ms;
+}
+
+.menu li a:hover {
+    background-color:rgba(100, 100, 100, 0.8) ;
+    transition: 500ms;
+}
+
+    /*Fim Style Header*/
+
+    /*Inicio Style Footer*/
+
+footer{
+    background-color: #000000;
+    padding: 50px 0;
+}
+
+.container-footer{
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+}
+
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.footer-col ul{
+    list-style: none;
+}
+
+.footer-col ul li{
+    margin: 10px 0;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #cecdcd;
+    padding-left: 10px;
+}
+
+.footer-col .medias-socias{
+    margin-top: 30px;
+}
+
+.footer-col .medias-socias a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+}
+
+.footer-col .medias-socias a i{
+    font-size: 20px;
+}
+
+
+.footer-col .medias-socias a:hover{
+    color: #415aca;
+    background-color: white;
+}
+
+.footer-col .form-sub input{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid white;
+    color: #555;
+    background-color: #ffffff;
+}
+
+.footer-col .form-sub input::placeholder{
+    color: rgb(0, 0, 0);
+}
+
+.footer-col .form-sub button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px; 
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #000000;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: white;        
+}
+
+.medias-socias {
+    position: relative;
+    top: 40px;
+    left: -400px;
+}
+
+/*Fim Style Footer*/
+
+/* Responsivo */
+
+@media (max-width: 800px) {
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:600px) {
+    .footer-col{
+        width: 100%;
+    }
+}
